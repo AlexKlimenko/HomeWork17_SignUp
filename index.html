@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>registration</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--===============================================================================================-->
+
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+          <form class="login100-form validate-form">
+            <span class="login100-form-title p-b-55">
+              Registration
+            </span>
+      <!-- input userName -->
+            <div class="userName d-flex justify-content-between wrap-input100">
+              <div class="wrap-input100 validate-input m-b-16 m-r-10" data-validate="First Name is required">
+                <input
+                  class="input100"
+                  type="text"
+                  name="firstName"
+                  placeholder="First Name"
+                  data-required="name"
+                />
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <span class="lnr lnr-user"></span>
+                </span>
+              </div>
+
+              <div class="wrap-input100 validate-input m-b-16" data-validate="Last Name is required">
+                <input
+                  class="input100"
+                  type="text"
+                  name="lastName"
+                  placeholder="Last Name"
+                  data-required="name"
+                />
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <span class="lnr lnr-user"></span>
+                </span>
+              </div>
+            </div>
+            
+            <div class="wrap-input100 validate-input m-b-100" data-validate="Nick Name is required">
+              <input
+                class="input100"
+                type="text"
+                name="nickName"
+                placeholder="Nick Name"
+                required
+              />
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <span class="lnr lnr-user"></span>
+              </span>
+            </div>
+            <!--  -->
+            <span class="login100-form-subtitle p-b-16">
+              Date of Birth
+            </span>
+<!-- input date of birth -->
+            <div class="birthDate d-flex justify-content-between wrap-input100" data-validate="Date is required">
+              <div class="wrap-input100 validate-input m-b-16 m-r-10">
+
+                <select class="input100" name="dayOfBirth" id="dayOfBirth" required data-required-number="date">
+                  <option value="" disabled selected>Day
+                </select>
+
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <span class="lnr lnr-calendar-full"></span>
+                </span>
+              </div>
+
+              <div class="wrap-input100 validate-input m-b-16 m-r-10" data-validate="Date is required">
+                <select class="input100" name="monthOfBirth" id="monthOfBirth" required data-required-number="date">
+                  <option value="" disabled selected>Month
+                </select>
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <span class="lnr lnr-calendar-full"></span>
+                </span>
+              </div>
+              <div class="wrap-input100 validate-input m-b-16" data-validate="Date is required">
+                <select class="input100" name="yearOfBirth" id="yearOfBirth" required data-required-number="date">
+                  <option value="" disabled selected>Year
+                </select>
+
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <span class="lnr lnr-calendar-full"></span>
+                </span>
+              </div>
+            </div>
+
+        <!-- location -->
+
+            <div class="d-flex justify-content-between wrap-input100 m-t-30">
+              <div class="wrap-input100 validate-input m-b-16 m-r-10" data-validate="Location is required">
+                <select class="input100" name="country" id="country" required data-required="name">
+                    <option value="" disabled selected>Country
+                </select>
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <span class="lnr lnr-earth"></span>
+                </span>
+              </div>
+
+              <div class="wrap-input100 validate-input m-b-16" data-validate="Location is required">
+                <select class="input100" name="city" id="city" required data-required="name">
+                    <option value="" disabled selected>City
+                </select>
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <span class="lnr lnr-earth"></span>
+                </span>
+              </div>
+            </div>
+
+            <!-- gender -->
+
+            <div class="wrap-input100 validate-input m-b-50 m-t-30">
+              <select class="select select100" name="gender" id="gender" required>
+                <option value="" disabled selected>Gender
+                <option>Female</option>
+                <option>Male</option>
+              </select>
+               <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <span class="lnr lnr-users"></span>
+              </span>
+            </div>
+
+          <!-- email -->
+            <div
+              class="wrap-input100 validate-input m-b-30"
+              data-validate="Valid email is required: ex@abc.xyz"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="email"
+                placeholder="Email"
+                data-required="email"
+              />
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <span class="lnr lnr-envelope"></span>
+              </span>
+            </div>
+
+
+          <!-- phone -->
+          <div class="wrap-input100 validate-input m-b-40" data-validate="Phone is required">
+            <input
+              class="input100"
+              type="number"
+              name="phone"
+              placeholder="Phone"
+              data-required="phone"
+            />
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <span class="lnr lnr-phone-handset"></span>
+            </span>
+          </div>
+
+
+          <!-- password -->
+            <div
+              class="wrap-input100 validate-input m-b-16"
+              data-validate="Password is required"
+            >
+              <input
+                class="input100"
+                type="password"
+                name="pass"
+                placeholder="Password"
+                data-required="password"
+              />
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <span class="lnr lnr-lock"></span>
+              </span>
+            </div>
+
+            <div
+              class="wrap-input100 validate-input m-b-16"
+              data-validate="Password is required"
+            >
+              <input
+                class="input100"
+                type="password"
+                name="repeatPass"
+                placeholder="Repeat Password"
+                data-required="password"
+              />
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <span class="lnr lnr-lock"></span>
+              </span>
+            </div>
+
+            <div class="contact100-form-checkbox m-l-4 m-t-40">
+              <input
+                class="input-checkbox100"
+                id="ckb1"
+                type="checkbox"
+                name="agree"
+              />
+              <label class="label-checkbox100" for="ckb1">
+                I agree with terms and conditions
+              </label>
+            </div>
+
+            <div class="container-login100-form-btn p-t-25">
+              <button class="login100-form-btn">
+                Sign up
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
